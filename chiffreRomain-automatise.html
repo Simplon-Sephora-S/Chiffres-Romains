@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Chiffre romain</title>
+</head>
+<body>
+
+  <script type="text/javascript">
+
+  // Nombre que l'utilisateur saisi
+  var user=  Number(prompt("Choisis un chiffre de 1 à 10."));
+  console.log(user);
+
+  // Compare la saisie et la réponse en chiffre romain
+  for (var i = 1; i < 11; i++) {
+
+    //position du chiffre saisi
+    var PositionChiffre=[user]-1;
+    console.log("Position: " + PositionChiffre);
+
+
+    var chiffresRomains = ["I", "II" , "III", "IV", "V", "VI", "VII", "IIX", "IX", "X"];
+    
+    // Affiche
+    console.log(chiffresRomains[PositionChiffre]);
+    break;
+  }
+
+  </script>
+
+</body>
+</html>
